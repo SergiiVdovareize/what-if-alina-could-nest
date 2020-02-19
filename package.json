@@ -6,7 +6,8 @@
     "build": "tsc -p tsconfig.build.json",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nodemon",
-    "compose": "docker-compose up"
+    "compose": "docker-compose up",
+    "docs": "apidoc -i src -o docs/"
   },
   "dependencies": {
     "@nestjs/common": "^6.11.7",
@@ -26,6 +27,7 @@
     "@types/node": "^13.7.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "apidoc": "^0.19.1"
   }
 }
