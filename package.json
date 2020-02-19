@@ -26,6 +26,6 @@
     "@types/node": "^13.7.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.2"
   }
 }
