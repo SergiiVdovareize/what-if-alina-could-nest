@@ -2,7 +2,6 @@
   "name": "what-if-alina-could-nest",
   "version": "0.1.0",
   "description": "rest api on nest.js",
-  "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
