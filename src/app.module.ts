@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { MongooseModule } from "@nestjs/mongoose";
-import { CarModule } from './car/car.module';
+import { CarsModule } from './cars/cars.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 
@@ -13,7 +13,7 @@ import { join } from 'path';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'docs'),
     }),
-    CarModule
+    CarsModule
   ],
   controllers: [AppController]
 })

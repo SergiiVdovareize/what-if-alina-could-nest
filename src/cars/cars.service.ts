@@ -7,7 +7,7 @@ import { ICar } from "./interfaces/car.interface";
 import { CreateCarDTO } from "./dto/car.dto";
 
 @Injectable()
-export class CarService {
+export class CarsService {
     constructor(@InjectModel('Car') private readonly carModel: Model<ICar>) {}
 
     async getCars(): Promise<ICar[]> {
