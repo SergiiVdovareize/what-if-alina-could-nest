@@ -21,7 +21,7 @@
     "@types/mongoose": "^5.7.1",
     "@types/node": "^13.7.2",
     "dotenv": "^8.2.0",
-    "mongoose": "^5.9.1",
+    "mongoose": "^5.13.15",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4",
