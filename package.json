@@ -1,6 +1,6 @@
 {
   "name": "what-if-alina-could-nest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "rest api on nest.js",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
