@@ -25,13 +25,13 @@ export class CarsService {
 
     async updateCar(carId: string, createCarDTO: CreateCarDTO): Promise<ICar> {
         const foundCar = await this.findCar(carId);
-        await foundCar.update(createCarDTO, {new:true});
+        await foundCar.updateOne(createCarDTO, {new:true});
         return await this.findCar(carId);
     }
     
     async deleteCar(carId: string): Promise<any> {
         const foundCar = await this.findCar(carId);
-        return await foundCar.remove()
+        return await foundCar.deleteOne()
     }
 
     async applyDiscount(fromDate: Date, toDate: Date, factor: number) {

@@ -7,9 +7,7 @@ import { join } from 'path';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.MONGODB_URI, {
-      useNewUrlParser: true
-    }),
+    MongooseModule.forRoot(process.env.MONGODB_URI),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'docs'),
     }),
